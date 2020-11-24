@@ -17,13 +17,6 @@ var generateRandomSuit = () => {
 //};
 
 window.onload = function() {
-  var button = document.createElement("button");
-  button.type = "button";
-  button.innerText = "Nueva Carta";
-  document.body.appendChild(button);
-  document.button.addEvenListener(click, function{
-     document.card.innerHTML = suit;
-  });
   //console.log("Hello Rigo from the console!");
   document.querySelector("body").style.background = "#0E7E12";
   var card = document.querySelector(".card");
@@ -42,4 +35,12 @@ window.onload = function() {
   } else {
     card.style.color = "black";
   }
+
+  var button = document.createElement("button");
+  button.type = "button";
+  button.innerText = "Nueva Carta";
+  document.body.appendChild(button);
+  document.button.addEvenListener(click, () => {
+    document.card.innerHTML = suit;
+  });
 };
