@@ -1,5 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+div {
+  box-sizing: border-box;
+}
 .card {
   margin: auto;
   margin-top: 60px;
@@ -8,4 +11,25 @@
   border-radius: 20px;
   border: solid rgba(0, 0, 0, 0.2) 1px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.suit-top,
+.suit-bottom {
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 92px;
+}
+.suit-middle {
+  margin: auto;
+  font-size: 83px;
+}
+.suit-bottom {
+  transform: rotate(180deg);
+}
+button {
+  display: block;
+  margin: auto;
+  margin-top: 35px;
 }
