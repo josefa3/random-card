@@ -35,12 +35,4 @@ window.onload = function() {
   } else {
     card.style.color = "black";
   }
-
-  var button = document.createElement("button");
-  button.type = "button";
-  button.innerText = "Nueva Carta";
-  document.body.appendChild(button);
-  document.button.addEvenListener(click, () => {
-    document.card.innerHTML = suit;
-  });
 };
